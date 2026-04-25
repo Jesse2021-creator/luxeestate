@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif !important;  
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar glass effect on scroll */
+.nav-scrolled {
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* nav link animation */
+.nav-link {
+  position: relative;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #CEA461;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.featured {
+    padding: 2rem;
+}
+
+.property {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

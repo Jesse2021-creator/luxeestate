@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents - Luxe Estate</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-black text-white" style="font-family: 'Poppins', sans-serif;">
+
+    <!-- ================= NAV ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <h1 class="text-xl font-semibold">
+                LUXE<span class="text-[#CEA461]">ESTATE</span>
+            </h1>
+
+            <div class="hidden md:flex gap-10 text-sm">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="listings.html" class="nav-link">Listings</a>
+                <a href="agents.html" class="text-[#CEA461]">Agents</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="pt-36 pb-20 text-center px-6">
+
+        <p class="text-[#CEA461] uppercase tracking-[0.4em] text-xs mb-5">
+            Our Experts
+        </p>
+
+        <h1 class="text-4xl md:text-6xl font-light leading-tight">
+            Meet Our <span class="text-[#CEA461]">Advisors</span>
+        </h1>
+
+        <p class="text-gray-400 mt-6 max-w-xl mx-auto text-sm md:text-base">
+            A curated team of real estate professionals dedicated to delivering
+            exceptional results and seamless luxury experiences.
+        </p>
+
+    </section>
+
+    <!-- ================= AGENTS GRID ================= -->
+    <section class="px-6 pb-28">
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-14">
+
+            <!-- AGENT CARD -->
+            <div class="group">
+
+                <!-- IMAGE -->
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="assets/img/user1.jpg"
+                        class="w-full h-[380px] object-cover transition duration-700 group-hover:scale-110">
+
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <!-- hover info -->
+                    <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-sm text-gray-300">
+                            10+ years experience in luxury real estate and high-value investments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- INFO -->
+                <h3 class="text-xl font-light group-hover:text-[#CEA461] transition">
+                    Sarah Williams
+                </h3>
+
+                <p class="text-gray-400 text-sm mb-4">
+                    Senior Property Advisor
+                </p>
+
+                <!-- ACTION -->
+                <button class="text-[#CEA461] text-sm border-b border-[#CEA461] pb-1">
+                    View Profile →
+                </button>
+
+            </div>
+
+            <!-- AGENT CARD -->
+            <div class="group">
+
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="assets/img/user2.jpg"
+                        class="w-full h-[380px] object-cover transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-sm text-gray-300">
+                            Specialist in waterfront and ultra-modern architectural homes.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-light group-hover:text-[#CEA461] transition">
+                    James Carter
+                </h3>
+
+                <p class="text-gray-400 text-sm mb-4">
+                    Luxury Property Consultant
+                </p>
+
+                <button class="text-[#CEA461] text-sm border-b border-[#CEA461] pb-1">
+                    View Profile →
+                </button>
+
+            </div>
+
+            <!-- AGENT CARD -->
+            <div class="group">
+
+                <div class="relative overflow-hidden rounded-2xl mb-6">
+                    <img src="assets/img/user3.jpg"
+                        class="w-full h-[380px] object-cover transition duration-700 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-sm text-gray-300">
+                            Focused on high-return real estate investments and portfolio growth.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-light group-hover:text-[#CEA461] transition">
+                    Daniel Adams
+                </h3>
+
+                <p class="text-gray-400 text-sm mb-4">
+                    Investment Specialist
+                </p>
+
+                <button class="text-[#CEA461] text-sm border-b border-[#CEA461] pb-1">
+                    View Profile →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="border-t border-white/10 py-20 text-center">
+
+        <h2 class="text-3xl md:text-4xl font-light mb-6">
+            Work With <span class="text-[#CEA461]">Experts</span>
+        </h2>
+
+        <p class="text-gray-400 mb-8 text-sm">
+            Connect with our team and gain access to exclusive opportunities.
+        </p>
+
+        <a href="contact.html"
+            class="inline-block px-8 py-3 bg-[#CEA461] text-black rounded-full font-semibold
+            hover:scale-[1.03] transition">
+
+            Get in Touch
+
+        </a>
+
+    </section>
+
+    <footer class="bg-[#0a0a0a] pt-28 pb-12 border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- TOP GRID -->
+            <div class="grid md:grid-cols-4 gap-12 mb-20 text-left">
+
+                <!-- BRAND -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">
+                        Luxe <span class="text-[#CEA461]">Estate</span>
+                    </h2>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Premium real estate experiences curated for modern luxury living. Discover spaces that
+                        define lifestyle.
+                    </p>
+                </div>
+
+                <!-- NAV -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+
+                        <li><a href="#home" class="hover:text-[#CEA461] transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-[#CEA461] transition">Services</a></li>
+                        <li><a href="#featured" class="hover:text-[#CEA461] transition">Properties</a></li>
+                        <li><a href="#about" class="hover:text-[#CEA461] transition">About</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- SERVICES -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+
+                        <li>Luxury Listings</li>
+                        <li>Property Consulting</li>
+                        <li>Investment Guidance</li>
+                        <li>Private Deals</li>
+
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact</h3>
+
+                    <ul class="space-y-3 text-sm text-gray-400">
+
+                        <li>Lagos, Nigeria</li>
+                        <li>+234 XXX XXX XXXX</li>
+                        <li>hello@luxestate.com</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+
+                <!-- COPYRIGHT -->
+                <p class="text-gray-500 text-xs">
+                    © 2026 Luxe Estate. All rights reserved. | Made by Odozi Chidera
+                </p>
+
+                <!-- SOCIAL ICONS -->
+                <div class="flex items-center gap-5">
+
+                    <!-- Instagram -->
+                    <a href="#" class="text-gray-400 hover:text-[#CEA461] transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 17a3.5 3.5 0 0 0 0-7.5Zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitter / X -->
+                    <a href="#" class="text-gray-400 hover:text-[#CEA461] transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.2L6.4 22H3l7.3-8.4L1 2h6.3l4.4 5.7L18.9 2Zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20Z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" class="text-gray-400 hover:text-[#CEA461] transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.33V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.51v6.23ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45Z" />
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
