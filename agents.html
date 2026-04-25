@@ -29,8 +29,48 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
+            <!-- MOBILE BUTTON -->
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-50">
+
+                <span class="w-6 h-[2px] bg-white"></span>
+                <span class="w-6 h-[2px] bg-white"></span>
+                <span class="w-6 h-[2px] bg-white"></span>
+
+            </button>
         </div>
     </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-md">
+
+        <!-- PANEL -->
+        <div id="mobile-panel"
+            class="absolute top-0 right-0 w-[80%] max-w-sm h-full bg-[#0f0f0f] border-l border-white/10
+            transform translate-x-full transition duration-300 p-8 flex flex-col">
+
+            <!-- CLOSE -->
+            <button id="close-menu" class="text-white text-2xl self-end mb-10">
+                ✕
+            </button>
+
+            <!-- LINKS -->
+            <div class="flex flex-col gap-6 text-lg text-white">
+
+                <a href="index.html" class="hover:text-[#CEA461] transition">Home</a>
+                <a href="listings.html" class="hover:text-[#CEA461] transition">Listings</a>
+                <a href="agents.html" class="text-[#CEA461]">Agents</a>
+                <a href="contact.html" class="hover:text-[#CEA461] transition">Contact</a>
+
+            </div>
+
+            <!-- CTA -->
+            <button class="open-booking mt-10 bg-[#CEA461] text-black py-3 rounded-xl font-semibold">
+                Book Viewing
+            </button>
+
+        </div>
+    </div>
 
     <!-- ================= HERO ================= -->
     <section class="pt-36 pb-20 text-center px-6">
@@ -277,5 +317,7 @@
         </div>
 
     </footer>
+
+    <script src="assets/script/main.js"></script>
 </body>
 </html>

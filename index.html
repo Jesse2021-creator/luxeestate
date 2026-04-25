@@ -64,6 +64,37 @@
 
         </div>
     </nav>
+    <!-- MOBILE MENU OVERLAY -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-md">
+
+        <!-- PANEL -->
+        <div id="mobile-panel"
+            class="absolute top-0 right-0 w-[80%] max-w-sm h-full bg-[#0f0f0f] border-l border-white/10
+            transform translate-x-full transition duration-300 p-8 flex flex-col">
+
+            <!-- CLOSE -->
+            <button id="close-menu" class="text-white text-2xl self-end mb-10">
+                ✕
+            </button>
+
+            <!-- LINKS -->
+            <div class="flex flex-col gap-6 text-lg text-white">
+
+                <a href="index.html" class="text-[#CEA461]">Home</a>
+                <a href="listings.html" class="hover:text-[#CEA461] transition">Listings</a>
+                <a href="agents.html" class="hover:text-[#CEA461] transition">Agents</a>
+                <a href="contact.html" class="hover:text-[#CEA461] transition">Contact</a>
+
+            </div>
+
+            <!-- CTA -->
+            <button class="open-booking mt-10 bg-[#CEA461] text-black py-3 rounded-xl font-semibold">
+                Book Viewing
+            </button>
+
+        </div>
+    </div>
     <main>
         <section class="relative h-screen overflow-hidden flex items-center">
 
