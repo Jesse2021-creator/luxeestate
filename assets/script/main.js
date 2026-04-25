@@ -28,6 +28,36 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobilePanel = document.getElementById("mobile-panel");
+const closeMenu = document.getElementById("close-menu");
+
+// OPEN MENU
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+
+  setTimeout(() => {
+    mobilePanel.classList.remove("translate-x-full");
+  }, 10);
+});
+
+// CLOSE MENU
+const closeMobileMenu = () => {
+  mobilePanel.classList.add("translate-x-full");
+
+  setTimeout(() => {
+    mobileMenu.classList.add("hidden");
+  }, 250);
+};
+
+closeMenu.addEventListener("click", closeMobileMenu);
+
+// CLICK OUTSIDE TO CLOSE
+mobileMenu.addEventListener("click", (e) => {
+  if (e.target === mobileMenu) closeMobileMenu();
+});
+
 
 // ===== MODAL SYSTEM =====
 const modal = document.getElementById("booking-modal");
